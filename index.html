@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<title>Exams 6</title>
+    </head>
+
+    
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 250px;
+            background-color: pink;
+            border: 2px solid blue;
+        }
+    
+        li a{
+            display: block;
+            color: burlywood;
+            padding: 14px 15px;
+            text-decoration: none;
+        
+        }
+    
+        li {
+            text-align: center;
+            border-bottom: 1px solid violet;
+    
+        }
+    
+        li:last-child{
+            border-bottom: none;
+        }
+    
+       
+    
+        li a.active{
+            background-color: grey;
+            color: ivory;
+    
+        }
+    
+        li a:hover:not(.active){
+          background-color: grey;
+          color: rgb(240, 255, 240);
+    
+        }
+    </style>
+
+
+<body>
+    <h1>Array Values</h1>
+    <script>
+        var array1=[1,2,3,4,5,6,7,8,9,10];
+        for (i=0; i<array1.length; i++){
+            document.write("η τιμη στη θεση "+i+" ειναι ιση με " +array1[i]);
+            document.write("<br>");
+        }
+        
+        var array2=["anthi","giannis","xristos","dafni","mara","eleana","lyda","aggelos","marios","maria"];
+        for (i=0; i<array2.length; i++){
+            document.write("η τιμη στη θεση "+i+" ειναι ιση με " +array2[i]);
+            document.write("<br>");
+        }
+    </script>
+
+<ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="page1.html">page1</a></li>
+    </ul>
+
+
+
+</body>
+</html>
